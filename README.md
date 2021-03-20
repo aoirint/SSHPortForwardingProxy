@@ -7,8 +7,10 @@
 
 ## Image Build
 ```shell
-docker-compose build
+docker-compose build --force-rm --no-cache
 ```
+
+`--no-cache`
 
 ## Practice Usage
 1. Decide the username to login. (example: `myuser`)
