@@ -13,7 +13,7 @@ docker-compose build --force-rm --no-cache
 
 `--force-rm` prevents the intermediate images being cached and reused.
 
-`--no-cache` prevents reusing old images.
+`--no-cache` prevents reusing cached images.
 
 
 ## Practice Usage
