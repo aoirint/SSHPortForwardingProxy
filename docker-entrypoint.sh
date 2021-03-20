@@ -25,4 +25,4 @@ for pubkeypath in "${AUTHORIZED_KEYS_DIR}"/*; do
     echo "user added: ${username}"
 done
 
-/usr/sbin/sshd -D -E /sshd_log/auth.log
+/usr/sbin/sshd -D -e 2>&1 | tee -a /sshd_log/auth.log

@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-    sshd:
+    ssh-server:
         ports:
             # - "0.0.0.0:12322:22"
             # - "192.168.0.123:12322:22"

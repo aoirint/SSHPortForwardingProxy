@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-    sshd:
+    ssh-server:
         build: .
         volumes:
             - "./authorized_keys:/authorized_keys"
