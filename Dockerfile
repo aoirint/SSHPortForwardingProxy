@@ -5,7 +5,7 @@ RUN apt-get install -y \
         openssh-server
 
 RUN mkdir -p /var/run/sshd
-RUN mkdir -p /sshd_log
+RUN mkdir -p /sshd_log /authorized_keys
 RUN echo 'PasswordAuthentication no' >> /etc/ssh/sshd_config
 
 ADD ./docker-entrypoint.sh /
