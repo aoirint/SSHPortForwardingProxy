@@ -1,4 +1,4 @@
-# SSH Remote Server
+# SSH Port Forwarding Proxy
 
 ## SECURITY NOTICE
 **DO NOT PUBLISH THE BUILT DOCKER IMAGE.**
