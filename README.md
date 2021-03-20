@@ -5,12 +5,16 @@
 
 **YOU MUST BUILD THIS IMAGE BY YOURSELF.**
 
+
 ## Image Build
 ```shell
 docker-compose build --force-rm --no-cache
 ```
 
-`--no-cache`
+`--force-rm` prevents the intermediate images being reused.
+
+`--no-cache` prevents reusing old images.
+
 
 ## Practice Usage
 1. Decide the username to login. (example: `myuser`)
@@ -18,6 +22,7 @@ docker-compose build --force-rm --no-cache
 3. Execute `docker-compose up -d`.
 4. Execute `ssh -N myuser@localhost -p 12322 -i YOUR_PRIVATE_KEY`.
 5. Execute `docker-compose down` to close the ssh server.
+
 
 ## Real Usage
 1. Decide the username to login. (example: `myuser`)
